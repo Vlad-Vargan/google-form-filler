@@ -38,7 +38,7 @@ class GoogleForm():
                     .click()
         sleep(5)
         url  = "https://docs.google.com/forms/d/1Vu_OAVkCzTH_v4GnZah2AA9lE3GpKeux3wEwSska0w4/edit"
-        self.driver.get(url)
+        self.driver.get(self.form)
         sleep(1)
 
         element = self.driver.find_element_by_xpath("//*[@id=\"SchemaEditor\"]/div/div[2]/div/div[2]/div[3]")
@@ -66,7 +66,7 @@ class GoogleForm():
         self.driver.quit()
 
 if __name__ == "__main__":
-    url = "https://docs.google.com/forms/d/1Vu_OAVkCzTH_v4GnZah2AA9lE3GpKeux3wEwSska0w4/edit"
+    url = "FORM LINK TO EDIT"
     """
     To manipulate the GF script need to use your credentials
     """
